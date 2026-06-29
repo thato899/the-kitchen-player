@@ -11,6 +11,8 @@ code .
 
 ## First Setup
 
+### Windows PowerShell
+
 ```powershell
 cd C:\Users\User\Documents\Codex\2026-06-29\le\the-kitchen-player
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -23,9 +25,33 @@ With your GitHub username:
 .\scripts\setup.ps1 -GithubUsername YOUR_USERNAME
 ```
 
+### WSL/Linux Bash
+
+PowerShell commands such as `Set-ExecutionPolicy` do not work in WSL/Linux. Use Linux paths and forward slashes:
+
+```bash
+cd /mnt/c/Users/User/Documents/Codex/2026-06-29/le/the-kitchen-player
+chmod +x ./scripts/setup.sh
+./scripts/setup.sh
+```
+
+With your GitHub username:
+
+```bash
+./scripts/setup.sh thato899
+```
+
 ## Daily Development
 
+Windows PowerShell:
+
 ```powershell
+npm run dev
+```
+
+WSL/Linux:
+
+```bash
 npm run dev
 ```
 

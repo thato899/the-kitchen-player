@@ -40,6 +40,14 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\setup.ps1
 ```
 
+If you are using WSL/Linux, use:
+
+```bash
+cd /mnt/c/Users/User/Documents/Codex/2026-06-29/le/the-kitchen-player
+chmod +x ./scripts/setup.sh
+./scripts/setup.sh
+```
+
 See `docs/TERMINAL_WORKFLOW.md` for the full terminal workflow.
 
 ## Useful Commands
