@@ -33,6 +33,15 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+For a terminal-first setup, use:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\setup.ps1
+```
+
+See `docs/TERMINAL_WORKFLOW.md` for the full terminal workflow.
+
 ## Useful Commands
 
 ```powershell
